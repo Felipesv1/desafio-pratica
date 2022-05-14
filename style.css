@@ -5,11 +5,11 @@
     list-style: none;
 }
 
-::root{
-    font-size:70%;
-}
+
 
 body{
+    max-width: 1600px;
+    margin:auto;
     width: 100%;
     height: 100%;
 background: gray;
@@ -18,12 +18,13 @@ background: gray;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 /*-----HEADER------------------------*/
 header{
 
     display: flex;
     justify-content: space-between;
-  
+  position: fixed;
     width: 100%;
 background: green;
 }
@@ -48,14 +49,7 @@ li:hover{
      cursor:pointer;
  }
 
- header h1{
-     font-size: 2rem;
-     color:black;
-     position: relative;
-     right: 250px;
-
-     margin-right:50px ;
- }
+ 
 
  .logo{
      width: 45px;
@@ -70,7 +64,13 @@ li:hover{
 
  /*------MAIN-----------------*/
 
-
+main{
+  max-width: 1000px;
+  margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
  
  .container {
  
@@ -85,7 +85,7 @@ li:hover{
 justify-content: space-around;
 height:220px;
 position: relative;
-left:40px;
+left:-170px;
 }
 
 .container h1{
@@ -98,7 +98,7 @@ left:40px;
 
 
 .container p{
-    margin-top:15px;
+   
     color:white;
 padding-right: 15px;
 
@@ -107,8 +107,8 @@ padding-right: 15px;
 figure{
     
     position: relative;
-    bottom: 280px;
-    right: -30px;
+    bottom: 285px;
+left:  170px;
     z-index: -1;
 }
 
@@ -128,7 +128,8 @@ height: 0;
 }
 
 button{
-    margin-left: 42px;
+    position: relative;
+    right: 150px;
     padding: 15px;
     padding-left: 95px;
     padding-right: 95px;
@@ -145,45 +146,39 @@ button:hover{
     box-shadow:0px 0px 30px 5px white;
 }
 
-@media(max-width:1024px){
-    header h1{
-       
-       margin-left: 255px;
-       background: red;
-       width: 40%;
+@media(max-width:1224px){
 
-    }
+    main{
+        max-width: 700px;
+        margin: auto;
+          display: flex;
+          align-items: center;
+          
+      }
+
     .logo{
      width: 45px;
      margin-left:60px;
-     background: powderblue;
 }
 header ul{
-    width: 100vw;
+    width: 100%;
     display: flex;
-   margin-right: 10px;
-   justify-content: space-evenly;
    background: gray;
 }
 
 .container h1{
     color:white;
-    font-size: 3.6rem;
-    position: relative;
-    right:65px;
-
+    font-size: 2.6rem;
+   
 
 }
 
 .container p{
-    
-position: relative;
-right: 65px;
-
+    margin-left: 80px;
+    font-size: 1rem;
  }
  button{
-     position: relative;
-     right: 65px;
+    font-size: 1rem;
  }
 
  img{
@@ -191,72 +186,85 @@ right: 65px;
 }
 
 figure{
-    right: -13px;
+    position: relative;
+    left:125px;
+
 }
 
  }
 
 
 
-@media(max-width:768px){
+@media(max-width:900px){
+
+
+body{
+    width: 100%;
+    max-width: 1900px;
+    margin: auto;
+
+}
+
+header{
+    max-width: 1900px;
+    width: 100%;
+ 
+}
+
+
     header ul{
         display: none;
-    }
-    header h1{
-        font-size: 2rem;
-        color:black;
-        position: relative;
-       left: -250px;
-   
-        
-    }
+     }
    
     .logo{
         width: 45px;
         margin-left:55px;
+        display: block;
     }
 
     .menu{
         display: flex;
+        width: 2rem;
         margin-right:65px;
     }
 .box-img{
         align-items: center;
         position: relative;
         top:100px;
-     
-    }
-
-    figure{
-        left:-15px;
-    }
+        right: 125px;
+ }
     
 
     .container h1{
         position: relative;
         top:335px;
-        left: 55px;
+        margin-left: auto;
+        left: 55px; 
     }
 
     .container p{
         position: relative;
-        top:340px;
-        left: 90px;
+        top:280px;
+        left: 260px;
+ 
     }
 
     button{
         position: relative;
-        top:330px; 
-        left: 115px;
+        top: 285px;
+        left: 145px;
     }
 
     .ava{
-        margin-left: 115px;
+     
+   margin-right: 101px;
+   position: relative;
+   left: -50px;
+   padding-bottom: 50px;
     }
 
     .pr{
-        margin-left: 70px;
-        position: relative;
-        top:15px;
+        padding-left: 40px;
+       
     }
 }
