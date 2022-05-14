@@ -245,14 +245,14 @@ header{
     .container p{
         position: relative;
         top:280px;
-        left: 260px;
+        left: 255px;
  
     }
 
     button{
         position: relative;
         top: 285px;
-        left: 145px;
+        left: 140px;
     }
 
     .ava{
@@ -266,5 +266,40 @@ header{
     .pr{
         padding-left: 40px;
        
+    }
+
+     }
+
+    @media(max-width:460px){
+        .container h1{
+            position: relative;
+            top:300px;
+            margin-left: auto;
+            left: 250px; 
+            font-size: 1;
+        }
+    
+        .container p { 
+            position: relative;
+            top:280px;
+            left: 150px;
+     
+        }
+    
+        button{
+            position: relative;
+            top: 285px;
+            left: 25px;
+        }
+    
+        .ava{
+         
+       margin-right: 180px;
+       position: relative;
+       padding-bottom: 50px;
+    }
+
+    img{
+        width: 300px;
     }
 }
